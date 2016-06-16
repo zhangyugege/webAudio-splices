@@ -58,14 +58,16 @@
 		//创建线性渐变对象，以便绘制柱状图使用
 		ARR.length = 0;
 		ARR.linearGradient = ctx.createLinearGradient(0, HEIGHT, 0, 0);
-		ARR.linearGradient.addColorStop(0, 'green');
-		ARR.linearGradient.addColorStop(0.5, '#ff0');
-		ARR.linearGradient.addColorStop(1, '#f00');	
-	
+		ARR.linearGradient.addColorStop(0, 'lightblue');
+		ARR.linearGradient.addColorStop(0.5, 'blue');
+		ARR.linearGradient.addColorStop(1, 'pink');
+        //颜色随机数组
+        var arrs=['rgba('+0+','+0+','+250+',0)','rgba('+230+','+0+','+100+',0)'];
 		for(var i = 0;i < SIZE; i++){
 			var x =  random(0, WIDTH),
 				y = random(0, HEIGHT),
-				color = 'rgba('+random(100, 250)+','+random(50, 250)+','+random(50, 100)+',0)',
+				//color = 'rgba('+random(100, 250)+','+random(50, 250)+','+random(50, 100)+',0)',
+				color = arrs[parseInt(Math.random()*2)],
 				ran = random(1, 8) * 0.2;
 			ARR.push({
 				x: x,
