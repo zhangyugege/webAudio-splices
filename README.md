@@ -18,6 +18,12 @@
  - 运行平台：pc 
  - 主要实现技术：AudioContext
  
+ - 如何运行
+-------
+ - pull到自己的目录下
+ - 运行`npm install`
+ - 运行`supervisor bin/www`
+ - 访问localhost:3000
  
  - 还需改进
 -------
